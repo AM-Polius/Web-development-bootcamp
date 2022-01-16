@@ -3,7 +3,7 @@ body{
     }
 
 .Welcome-text { 
-    background-image:url("Images/HarryPotter/Images/banner.jpeg");
+    background-image:url("../Images/banner.jpeg");
     background-repeat:no-repeat;
     background-size: cover;
     width: 100%;
