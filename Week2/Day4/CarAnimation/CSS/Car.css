@@ -1,0 +1,101 @@
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            overflow: hidden;
+            animation: shakebody linear 6s infinite;
+        }
+        
+        .sky {
+            background-image: url("../Images/background.jpg");
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            background-repeat: no-repeat;
+        }
+        
+        .trees {
+            background-image: url("../Images/trees.png");
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            background-repeat: no-repeat;
+            top: -140px;
+        }
+        
+        .track {
+            background-image: url("../Images/track.png");
+            height: 60vh;
+            width: 600vw;
+            position: absolute;
+            background-repeat: repeat-x;
+            top: 80vh;
+            animation: CarMovement linear 13s infinite;
+        }
+        
+        .car {
+            background-image: url(../Images/car_body.png);
+            height: 100vh;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: 60%;
+            position: absolute;
+            top: 65vh;
+            left: 400px;
+            animation: shake linear .3s infinite;
+        }
+        
+        .wheel1 {
+            width: 150px;
+            left: 109px;
+            top: 88px;
+            position: relative;
+            animation: WheelsMovement linear 10s infinite;
+        }
+        
+        .wheel2 {
+            width: 150px;
+            left: 535px;
+            top: -95px;
+            position: relative;
+            animation: WheelsMovement linear 10s infinite;
+        }
+        
+        @keyframes WheelsMovement {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes CarMovement {
+            100% {
+                transform: translateX(-500vw);
+            }
+        }
+        
+        @keyframes shakebody {
+            0% {
+                transform: translateY(50px);
+            }
+            50% {
+                transform: translateY(50px);
+            }
+            100% {
+                transform: translateY(-50px);
+            }
+        }
+        
+        @keyframes shake {
+            0% {
+                transform: translateY(-5px);
+            }
+            50% {
+                transform: translateY(5px);
+            }
+            100% {
+                transform: translateY(-5px);
+            }
+        }
