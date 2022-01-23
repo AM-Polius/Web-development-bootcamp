@@ -6,7 +6,7 @@
 
 header {
     background-color: #F24236;
-    padding: 50px 0;
+    padding: 20px 0;
     text-align: center;
     position: fixed;
     width: 100%;
@@ -16,10 +16,9 @@ header {
 header h1 {
     color: white;
     display: inline-block;
-    border: 20px solid white;
+    border: 6px solid white;
     border-radius: 60px;
-    font-size: 80px;
-    padding: 50px 20px;
+    font-size: 25px;
 }
 
 .banner {
@@ -37,9 +36,9 @@ header h1 {
 .welcome {
     background: orange;
     color: white;
-    font-size: 200px;
+    font-size: 60px;
     text-align: none;
-    padding: 300px;
+    padding: 80px;
     position: absolute;
     top: 30%;
     width: 40%;
@@ -47,9 +46,9 @@ header h1 {
 
 #Main-text {
     font-family: 'Trebuchet MS';
-    font-size: 100px;
+    font-size: 20px;
     color: grey;
-    line-height: 100px;
+    line-height: 20px;
 }
 
 nav {
@@ -67,7 +66,7 @@ nav ul {
 nav li {
     width: 25%;
     display: inline-block;
-    font-size: 80px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -85,11 +84,11 @@ main {
 
 article h2 {
     color: #F24236;
-    font-size: 200px;
+    font-size: 20px;
 }
 
 p {
-    font-size: 100px;
+    font-size: 20px;
     color: grey;
 }
 
@@ -104,12 +103,12 @@ article p {
     white-space: nowrap;
     gap: 70px;
     width: auto;
-    height: 1000px;
+    height: 200px;
 }
 
 .Image-container,
 img {
-    height: 1000px;
+    height: 200px;
 }
 
 .join {
@@ -120,7 +119,7 @@ img {
 }
 
 .join h2 {
-    font-size: 100px;
+    font-size: 20px;
 }
 
 form input {
