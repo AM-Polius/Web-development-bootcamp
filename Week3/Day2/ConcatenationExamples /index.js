@@ -1,0 +1,1 @@
+var message = "hello"; var name = "Ann-Margaret"; alert(message + " there, " + name);
