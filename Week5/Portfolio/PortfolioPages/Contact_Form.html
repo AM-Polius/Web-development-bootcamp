@@ -1,0 +1,84 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="Css/Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/9dcbee0211.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+    <!-- Nav bar -->
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="Index.html">Home</a>
+            <a href="About_Me.html">About</a>
+            <a href="Portfolio_Page.html">My Work</a>
+            <a href="Contact_Form.html">Contact</a>
+        </div>
+    </div>
+
+    <span class="Menu_icon" onclick="openNav()">&#9776;</span>
+    <!-- End of nav -->
+
+
+
+
+    <!-- End of nav -->
+
+
+    <!-------------------------------------- Contact Form------------------------------------------ -->
+
+    <section class="contact" id="contact">
+        <h2 class="About_me_title_contact_page">Lets Chat!</h2>
+        <p class="About_me_paragraph">If you want more infomation about me - you can find me on social media or you can send a message here!</p>
+        <div class="contact-form-container">
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xyylngw" method="POST">
+                    <div class="form-control">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field" required />
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field" required />
+                    </div>
+                    <div class="form-control">
+                        <label for="message">Message</label>
+                        <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message" class="input-field" required></textarea>
+                    </div>
+                    <button class="Submit_button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="Contact_image_girl">
+        <img src="Images/ImagesOfMe/Contact image girl.png" alt="Girl reading on floor">
+    </div>
+
+
+
+
+    <script src="JS/Curtain_Menu.js"></script>
+
+
+
+
+</body>
+
+
+
+
+</html>

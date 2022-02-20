@@ -1,0 +1,763 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap");
+* body {
+    /* background-color: pink; */
+    margin: 0px;
+    padding: 0px;
+    font-family: Inconsolata;
+}
+
+
+/* ---------------------------------Menu curtain ------------------------------------ */
+
+.Menu_icon {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    font-size: 75px;
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.overlay {
+    z-index: 2;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    background-color: #55828C;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 60px;
+    font-weight: bold;
+    color: #FE6D73;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: white;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+/* ------------------------------------------About me title--------------------------------- */
+
+#Header_text {
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 84px;
+    color: #CF5F73;
+    position: absolute;
+    width: 1000px;
+    padding: 10px;
+    text-align: left;
+    top: 6rem;
+    left: 4rem;
+}
+
+#Paragraph_for_header {
+    position: absolute;
+    width: 700px;
+    height: 171px;
+    left: 105px;
+    top: 529px;
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 31px;
+    color: #000000;
+    text-align: center;
+    top: 15rem;
+    left: 8rem;
+}
+
+
+/* --------------------------Waving hand emjoi------------------------------- */
+
+.Waving_hand {
+    display: flex;
+    position: absolute;
+    right: 1040px;
+    top: 170px;
+    width: 80px;
+    height: 59px;
+}
+
+.Waving_hand:defined {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.Waving_hand:hover {
+    animation-play-state: paused;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+.Girl_sitting_on_stool_img {
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom: 154px;
+    height: 500px;
+    width: 500px;
+}
+
+
+/* --------------------------------Contact me button----------------------------------- */
+
+.Contact_me {
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: Inconsolata;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+    left: 23rem;
+    top: 26rem;
+}
+
+.Contact_me:hover {
+    background-color: orange;
+    color: black;
+}
+
+
+/* ----------------------------About me page------------------------------------------- */
+
+.header-container {
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    left: 0px;
+    top: 126px;
+    align-content: center;
+    background: #FFE3E0;
+}
+
+.Girl_sitting_on_floor {
+    display: flex;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    right: 103px;
+    bottom: 145px;
+}
+
+.About_me_title {
+    position: absolute;
+    top: 0rem;
+    width: 600px;
+    height: 100px;
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 52px;
+    color: #FE6D73;
+    display: block;
+    text-align: left;
+    left: 45px;
+}
+
+.Paragraph_about_me_section {
+    display: block;
+    text-align: left;
+    position: absolute;
+    width: 800px;
+    height: 171px;
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 31px;
+    color: #000000;
+    top: 9rem;
+    left: 52px;
+}
+
+.Tool_kit_title {
+    position: absolute;
+    font-family: Inconsolata;
+    bottom: 200px;
+    left: 60px;
+    font-size: 50px;
+    color: #FE6D73;
+    left: 45px;
+}
+
+.More_tools_header {
+    position: absolute;
+    bottom: 110px;
+    left: 45px;
+    font-size: 30px;
+    color: black;
+    font-family: Reenie Beanie, cursive;
+}
+
+
+/* ----------------------------End of about me page------------------------------------------- */
+
+
+/* -------------------------------------------Project portfoilio page------------------------------------ */
+
+.projects {
+    background-color: var(--bg-color);
+    padding: 32px 0;
+    margin-top: 2rem;
+}
+
+.project-pic {
+    width: 60%;
+    height: 6%;
+}
+
+.My_work h2 {
+    margin: 0;
+    margin: 0;
+    margin-top: 100px;
+    font-size: 50px;
+    text-align: center;
+    color: #CF5F73;
+}
+
+.My_work p {
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 35px;
+}
+
+.projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50px;
+    background-image: linear-gradient( 135deg, #F6CEEC 10%, #D939CD 100%);
+    height: 600px;
+}
+
+.project-details,
+h3 {
+    font-family: Inconsolata;
+    margin-bottom: var(--bottom-margin);
+    font-size: 15px;
+    text-align: justify;
+    width: 350px;
+}
+
+.projects-title,
+h1 {
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    font-family: Inconsolata;
+    font-size: 50px;
+    color: #CF5F73;
+}
+
+
+/* -------------------------------------------End of Project portfoilio page------------------------------------ */
+
+
+/*------------------ Social media icons ------------------*/
+
+.social_media_contact_icon {
+    width: 100%;
+    height: 20vh;
+    display: grid;
+    place-items: center;
+}
+
+.social_media_button {
+    float: left;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.social_media_button span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+}
+
+.social_media_button:hover {
+    width: 200px;
+}
+
+.social_media_button:nth-child(4):hover .icon {
+    background: #0e76a8;
+}
+
+.social_media_button:nth-child(6):hover .icon {
+    background: #333;
+}
+
+.social_media_button:nth-child(4) span {
+    color: #0e76a8;
+}
+
+.social_media_button:nth-child(6) span {
+    color: #333;
+}
+
+.social_media_button.icon {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+.social_media_button .icon i {
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-in-out;
+}
+
+.social_media_button:hover i {
+    color: #fff;
+}
+
+
+/* ---------------------------------------------Grid with Overlay section----------------------------------------------*/
+
+.wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 30% 40% auto auto;
+    grid-template-areas: "hd" "hero  " "casestudies" "contact" "ft";
+}
+
+
+/* case studies */
+
+.casestudies {
+    align-items: center;
+    display: grid;
+    grid-area: casestudies;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    justify-self: center;
+    grid-gap: 50px 50px;
+    margin: 0;
+}
+
+.work {
+    grid-column: span 3;
+    height: auto;
+    padding: 5rem;
+    margin: 0;
+}
+
+.work h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    color: #FE6D73;
+}
+
+.content {
+    position: relative;
+}
+
+.content .content-overlay {
+    background: black;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay {
+    opacity: 10;
+}
+
+.content-image {
+    width: 100%;
+    height: 90%;
+}
+
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding: 0 1rem;
+    width: 100%;
+    top: 40%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: unset;
+}
+
+.content-title {
+    color: #F4FAFF;
+    font-weight: 200;
+    font-size: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.content-text {
+    color: #F4FAFF;
+    font-size: 30px;
+}
+
+.content-details h2 {
+    color: #F4FAFF;
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+}
+
+.content-details p {
+    color: #F4FAFF;
+    font-size: 2rem;
+}
+
+.fadeIn-bottom {
+    top: 80%;
+}
+
+
+/* Button for View Code and Github */
+
+.button {
+    border-radius: 10px;
+    font-family: Inconsolata;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: #CF5F73;
+}
+
+
+/* Green */
+
+.button2 {
+    background-color: #CF5F73;
+}
+
+
+/* Blue */
+
+
+/* -------------------------------Contact Form ------------------------------*/
+
+.contact {
+    margin-top: 151px;
+}
+
+.About_me_title_contact_page {
+    position: absolute;
+    top: 30px;
+    margin-left: 30px;
+    width: 300px;
+    height: 100px;
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 52px;
+    color: #CF5F73;
+    display: block;
+    text-align: left;
+}
+
+.About_me_paragraph {
+    position: absolute;
+    top: 100px;
+    font-family: Inconsolata;
+    font-size: 20px;
+    margin-left: 29px;
+}
+
+.contact-form-container {
+    display: flex;
+    width: 100%;
+    height: 75%;
+    margin-top: 14px;
+    padding: 0.938rem;
+    border-radius: 5px;
+    background: rgba(255, 202, 212, 0.4);
+    z-index: 0;
+}
+
+.contact-form-container label {
+    line-height: 2.7em;
+    font-weight: var(--bold-font);
+    color: var(--primary-color);
+    font-family: Inconsolata;
+    font-weight: bolder;
+}
+
+.contact-form-container textarea {
+    min-height: 6.25rem;
+    font-size: 14px;
+    left: 80px;
+}
+
+.contact-form-container .input-field {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    border: 2px outset grey;
+    font-size: 0.875rem;
+    outline: none;
+}
+
+.input-field::placeholder {
+    padding: 0.5rem;
+    color: black;
+    font-family: Inconsolata;
+}
+
+.Submit_button {
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-family: Inconsolata;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+    left: 15rem;
+    top: 600px;
+}
+
+.Submit_button:hover {
+    background-color: orange;
+    color: black;
+}
+
+.Contact_image_girl {
+    display: flex;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    right: 150px;
+    bottom: 80px;
+}
+
+
+/* ---------------icons-------------------------- */
+
+.framework_icons {
+    position: absolute;
+    display: flex;
+    left: 3rem;
+    top: 562px;
+    width: 0;
+    height: 70px;
+}
+
+#s_media_icons {
+    display: flex;
+    position: absolute;
+    left: 17rem;
+    top: 750px;
+    transform: translate(-50%, -50%);
+}
+
+.s_media_icons_index {
+    display: flex;
+    position: absolute;
+    left: 27rem;
+    top: 532px;
+    transform: translate(-50%, -50%);
+}
+
+#s_media_icons li,
+.s_media_icons_index li {
+    list-style: circle;
+}
+
+#s_media_icons li,
+.s_media_icons_index li {
+    list-style: none;
+}
+
+#s_media_icons li a,
+.s_media_icons_index li a {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 33px;
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+}
+
+#s_media_icons li a .icon,
+.s_media_icons_index li a .icon {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+}
+
+#s_media_icons li a:hover .icon,
+.s_media_icons_index li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
+#s_media_icons li a,
+.s_media_icons_index li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 1;
+}
+
+#s_media_icons li a,
+.s_media_icons_index li a:hover:before {
+    top: 0;
+}
+
+#s_media_icons li:nth-child(1) a,
+.s_media_icons_index li:nth-child(1) a:before {
+    background: #3b5999;
+}
+
+#s_media_icons li:nth-child(2) a,
+.s_media_icons_index li:nth-child(2) a:before {
+    background: #55acee;
+}
+
+#s_media_icons li:nth-child(3) a,
+.s_media_icons_index li:nth-child(3) a:before {
+    background: #0077b5;
+}
+
+#s_media_icons li:nth-child(4) a,
+.s_media_icons_index li:nth-child(4) a:before {
+    background: #dd4b39;
+}
